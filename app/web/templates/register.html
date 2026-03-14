@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký - Face Attendance</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/css/auth.css" />
+  </head>
+  <body class="auth-body">
+    <main class="auth-shell">
+      <section class="auth-card">
+        <div class="auth-header">
+          <h1 data-i18n="register_title">Đăng ký</h1>
+          <p data-i18n="register_subtitle">Tạo tài khoản mới để bắt đầu quản lý dữ liệu nhận diện.</p>
+        </div>
+
+        <form id="registerForm" class="auth-form" novalidate>
+          <div class="field">
+            <label for="registerName" data-i18n="label_name">Họ tên</label>
+            <input
+              id="registerName"
+              name="name"
+              type="text"
+              autocomplete="name"
+              placeholder="Nguyễn Văn A"
+              data-i18n-placeholder="placeholder_name"
+              required
+            />
+            <span class="error" data-error-for="registerName"></span>
+          </div>
+          <div class="field">
+            <label for="registerEmail" data-i18n="label_email">Email</label>
+            <input
+              id="registerEmail"
+              name="email"
+              type="email"
+              autocomplete="email"
+              placeholder="email@congty.vn"
+              data-i18n-placeholder="placeholder_email"
+              required
+            />
+            <span class="error" data-error-for="registerEmail"></span>
+          </div>
+          <div class="field">
+            <label for="registerPassword" data-i18n="label_password">Mật khẩu</label>
+            <input
+              id="registerPassword"
+              name="password"
+              type="password"
+              minlength="8"
+              autocomplete="new-password"
+              placeholder="Tối thiểu 8 ký tự"
+              data-i18n-placeholder="placeholder_password"
+              required
+            />
+            <span class="error" data-error-for="registerPassword"></span>
+          </div>
+          <div class="field">
+            <label for="registerConfirm" data-i18n="label_confirm">Xác nhận mật khẩu</label>
+            <input
+              id="registerConfirm"
+              name="confirm_password"
+              type="password"
+              minlength="8"
+              autocomplete="new-password"
+              placeholder="Nhập lại mật khẩu"
+              data-i18n-placeholder="placeholder_confirm"
+              required
+            />
+            <span class="error" data-error-for="registerConfirm"></span>
+          </div>
+          <button class="primary-btn" type="submit" data-i18n="register_btn">Đăng ký</button>
+          <div class="auth-footer">
+            <span data-i18n="have_account">Đã có tài khoản?</span>
+            <a href="/login" data-i18n="go_login">Đăng nhập</a>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="auth-footer-bar">
+      <div class="auth-footer-inner">
+        <div>
+          <strong data-i18n="app_name">Face Attendance</strong>
+          <span data-i18n="footer_rights">© 2026. All rights reserved.</span>
+        </div>
+        <div class="auth-footer-links">
+          <a href="#" data-i18n="footer_terms">Điều khoản</a>
+          <a href="#" data-i18n="footer_privacy">Chính sách</a>
+          <a href="#" data-i18n="footer_support">Hỗ trợ</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/static/js/auth.js"></script>
+  </body>
+</html>

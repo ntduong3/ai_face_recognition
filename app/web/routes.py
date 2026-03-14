@@ -1,6 +1,7 @@
 ﻿from datetime import datetime
 
 from fastapi import APIRouter
+from fastapi.responses import RedirectResponse
 from fastapi.templating import Jinja2Templates
 from starlette.requests import Request
 
@@ -9,6 +10,11 @@ from app.core.deps import get_identities
 router = APIRouter()
 
 templates = Jinja2Templates(directory="app/web/templates")
+
+
+@router.get("/")
+async def root():
+    return RedirectResponse(url="/dashboard")
 
 
 @router.get("/dashboard")
@@ -38,3 +44,13 @@ async def dashboard(request: Request):
             "updated_at": datetime.now().strftime("%Y-%m-%d %H:%M"),
         },
     )
+
+
+@router.get("/login")
+async def login(request: Request):
+    return templates.TemplateResponse("login.html", {"request": request})
+
+
+@router.get("/register")
+async def register(request: Request):
+    return templates.TemplateResponse("register.html", {"request": request})

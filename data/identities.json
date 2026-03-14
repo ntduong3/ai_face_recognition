@@ -9,7 +9,8 @@
     "name": "Tran Minh Chau",
     "department": "HR",
     "email": "chau.tran@example.com",
-    "active": true
+    "active": false,
+    "image_url": null
   },
   "EMP003": {
     "name": "Le Hoang Long",
@@ -23,17 +24,11 @@
     "email": "ha.pham@example.com",
     "active": true
   },
-  "6974175": {
-    "name": "nguyen trong duong",
-    "department": "sdsv",
-    "email": "nt.duong@gmail.com",
-    "active": true
-  },
   "69741751": {
     "name": "Le Hoang Long",
     "department": "Finance",
     "email": "nt.duongq@samsung.com",
-    "active": false,
+    "active": true,
     "image_url": "/uploads/69741751_20260314150227.jpeg"
   }
 }

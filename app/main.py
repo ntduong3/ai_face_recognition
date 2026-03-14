@@ -58,6 +58,17 @@ def _hash_bytes(payload: bytes) -> str:
     return hashlib.sha256(payload).hexdigest()
 
 
+def _find_duplicate_identity(vector: np.ndarray):
+    faiss_index = get_faiss_index()
+    results = faiss_index.search(vector, top_k=1)
+    if not results:
+        return None
+    identity_id, score = results[0]
+    if score >= settings.similarity_threshold:
+        return identity_id, score
+    return None
+
+
 def _get_embedding_from_image(image_bytes: bytes) -> np.ndarray:
     cache = get_cache()
     embedder = get_embedder()
@@ -148,6 +159,19 @@ async def enroll(
     except ValueError as exc:
         logger.exception("Enroll failed: %s", exc)
         return JSONResponse(status_code=400, content={"error": str(exc)})
+
+    duplicate = _find_duplicate_identity(vector)
+    if duplicate is not None:
+        matched_id, score = duplicate
+        if matched_id != identity_id:
+            return JSONResponse(
+                status_code=409,
+                content={
+                    "error": "Duplicate face detected",
+                    "matched_identity": matched_id,
+                    "score": score,
+                },
+            )
 
     faiss_index = get_faiss_index()
     identities = get_identities()

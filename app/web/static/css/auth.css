@@ -1,0 +1,199 @@
+﻿:root {
+  --ink: #0b1426;
+  --muted: #5d6a86;
+  --accent: #2f5af4;
+  --accent-strong: #1a3bd1;
+  --card: #ffffff;
+  --border: #dbe3f5;
+  --shadow: 0 30px 70px rgba(13, 26, 64, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body.auth-body {
+  margin: 0;
+  font-family: "Be Vietnam Pro", "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top left, #ffffff 0%, #f3f6ff 45%, #e4edff 100%);
+  color: var(--ink);
+  min-height: 100vh;
+}
+
+.auth-header-bar,
+.auth-footer-bar {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.auth-header-inner,
+.auth-footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 0;
+}
+
+.auth-header-bar {
+  border-bottom: 1px solid rgba(219, 227, 245, 0.8);
+}
+
+.auth-footer-bar {
+  border-top: 1px solid rgba(219, 227, 245, 0.8);
+  padding: 12px 0 24px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.auth-footer-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.auth-footer-links a,
+.auth-header-actions a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.auth-shell {
+  min-height: calc(100vh - 140px);
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.auth-card {
+  width: min(520px, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 48px 44px;
+  background: var(--card);
+  box-shadow: var(--shadow);
+  border-radius: 24px;
+}
+
+.auth-header {
+  margin-bottom: 28px;
+}
+
+.auth-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  color: var(--accent-strong);
+}
+
+.brand-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  display: inline-block;
+}
+
+.auth-header h1 {
+  margin: 16px 0 8px;
+  font-size: 32px;
+  font-family: "Space Grotesk", "Be Vietnam Pro", sans-serif;
+}
+
+.auth-header p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.field input {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.field input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px rgba(47, 90, 244, 0.14);
+}
+
+.error {
+  min-height: 16px;
+  font-size: 12px;
+  color: #b3261e;
+}
+
+.primary-btn {
+  border: none;
+  border-radius: 12px;
+  padding: 12px 16px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primary-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 30px rgba(47, 90, 244, 0.2);
+}
+
+.auth-footer {
+  display: flex;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.auth-footer a {
+  color: var(--accent-strong);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 980px) {
+  .auth-header-bar,
+  .auth-footer-bar,
+  .auth-shell {
+    width: 90%;
+  }
+}
+
+@media (max-width: 640px) {
+  .auth-card {
+    padding: 40px 24px;
+  }
+
+  .auth-header-inner,
+  .auth-footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
