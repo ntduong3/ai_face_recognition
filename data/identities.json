@@ -1,0 +1,39 @@
+{
+  "EMP001": {
+    "name": "Nguyen Anh Tuan",
+    "department": "Engineering",
+    "email": "tuan.nguyen@example.com",
+    "active": true
+  },
+  "EMP002": {
+    "name": "Tran Minh Chau",
+    "department": "HR",
+    "email": "chau.tran@example.com",
+    "active": true
+  },
+  "EMP003": {
+    "name": "Le Hoang Long",
+    "department": "Finance",
+    "email": "long.le@example.com",
+    "active": true
+  },
+  "EMP004": {
+    "name": "Pham Thu Ha",
+    "department": "Operations",
+    "email": "ha.pham@example.com",
+    "active": true
+  },
+  "6974175": {
+    "name": "nguyen trong duong",
+    "department": "sdsv",
+    "email": "nt.duong@gmail.com",
+    "active": true
+  },
+  "69741751": {
+    "name": "Le Hoang Long",
+    "department": "Finance",
+    "email": "nt.duongq@samsung.com",
+    "active": false,
+    "image_url": "/uploads/69741751_20260314150227.jpeg"
+  }
+}
