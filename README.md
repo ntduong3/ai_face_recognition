@@ -1,6 +1,6 @@
-﻿# ai_face_recognition
+# ai_face_recognition
 
-Base hệ thống điểm danh khuôn mặt theo kiến trúc:
+Base facial attendance system based on the following architecture:
 
 Mobile App (200 devices)
         │
@@ -19,48 +19,48 @@ Identity Match
         ▼
 Attendance Service
 
-## Công nghệ
+## Technologies
 - FastAPI – API server
-- OpenCV – xử lý ảnh
-- ArcFace – tạo embedding (stub, cần thay bằng model thật)
-- FAISS – tìm vector nhanh
+- OpenCV – image processing
+- ArcFace – create embeddings (stub, need to replace with real model)
+- FAISS – fast vector search
 - Redis – cache (optional)
-- JSON – lưu dữ liệu tạm
+- JSON – temporary data storage
 - Bootstrap 5 + Bootstrap Icons + Google Fonts (UI dashboard)
 
-## Chạy server
-### 1) Dùng môi trường ảo (khuyến nghị)
+## Running the Server
+### 1) Using Virtual Environment (recommended)
 ```bash
-# Tạo venv
+# Create venv
 python -m venv .venv
 
-# Kích hoạt (PowerShell)
+# Activate (PowerShell)
 .\.venv\Scripts\Activate.ps1
 
-# Kích hoạt (CMD)
+# Activate (CMD)
 .\.venv\Scripts\activate.bat
 
-# Kích hoạt (Git Bash)
+# Activate (Git Bash)
 source .venv/Scripts/activate
 
-# Cài dependencies
+# Install dependencies
 pip install -r requirements.txt
 ```
 
-### 2) Khởi động API
+### 2) Start the API
 ```bash
 uvicorn app.main:app --host 0.0.0.0 --port 8000
 ```
 
-### 3) Mở dashboard
+### 3) Open Dashboard
 - `http://localhost:8000/dashboard`
 
-### 4) Kiểm tra health
+### 4) Check Health
 - `http://localhost:8000/health`
 
-## Thêm ảnh để nhận diện
-### 1) Đăng ký khuôn mặt (enroll)
-Gửi ảnh lên API để lưu embedding:
+## Adding Images for Recognition
+### 1) Register Face (enroll)
+Send image to API to save embedding:
 
 ```bash
 curl -X POST "http://localhost:8000/v1/enroll" \
@@ -71,48 +71,48 @@ curl -X POST "http://localhost:8000/v1/enroll" \
   -F "active=true" \
   -F "image=@D:\\path\\to\\face.jpg"
 ```
-### 2) Nhận diện (identify)
+### 2) Identify (identify)
 ```bash
 curl -X POST "http://localhost:8000/v1/identify" \
   -F "image=@D:\\path\\to\\face.jpg"
 ```
 
-### 3) Điểm danh (attendance)
+### 3) Attendance (attendance)
 ```bash
 curl -X POST "http://localhost:8000/v1/attendance" \
   -F "device_id=device-01" \
   -F "image=@D:\\path\\to\\face.jpg"
 ```
 
-## Hướng dẫn ảnh chuẩn để nhận diện tốt
-- Mặt nhìn thẳng, đủ trán đến cằm, không che mắt.
-- Hai mắt, mũi, miệng rõ nét; không đeo kính râm hoặc khẩu trang.
-- Ánh sáng đều, không ngược sáng, hạn chế bóng đổ mạnh.
-- Khuôn mặt chiếm khoảng 60-70% khung hình; ảnh không mờ/nhòe.
-- Nền đơn giản, ít vật thể gây nhiễu; độ phân giải tối thiểu 200x200.
+## Image Guidelines for Better Recognition
+- Face looking straight, from forehead to chin, eyes not covered.
+- Two eyes, nose, mouth are clear; no sunglasses or masks.
+- Uniform lighting, no backlighting, minimize strong shadows.
+- Face occupies about 60-70% of the frame; image should not be blurry.
+- Simple background with minimal interference; minimum resolution 200x200.
 
 ## UI CRUD
-- `POST /ui/users/` (form): tạo user
-- `PUT /ui/users/{identity_id}` (json): sửa user
-- `DELETE /ui/users/{identity_id}`: xóa user
+- `POST /ui/users/` (form): create user
+- `PUT /ui/users/{identity_id}` (json): update user
+- `DELETE /ui/users/{identity_id}`: delete user
 
-## API chính
+## Main APIs
 - `POST /v1/enroll` (multipart): `identity_id`, `name`, `department`, `email`, `active`, `image`
 - `POST /v1/identify` (multipart): `image`
 - `POST /v1/attendance` (multipart): `device_id`, `image`
 - `GET /health`
 - `GET /dashboard`
 
-## Dữ liệu
-- `data/identities.json`: map identity -> metadata
+## Data
+- `data/identities.json`: identity -> metadata mapping
 - `data/faiss.index`: FAISS index
-- `data/faiss_ids.json`: map vector_id -> identity_id
-- `data/attendance.jsonl`: log điểm danh
+- `data/faiss_ids.json`: vector_id -> identity_id mapping
+- `data/attendance.jsonl`: attendance log
 
-## Log server
+## Server Logs
 - Log file: `logs/server.log`
-- Nếu gặp lỗi, gửi log này để debug.
+- If you encounter errors, send this log file for debugging.
 
-## Ghi chú
-- Embedding hiện tại là stub (deterministic) để chạy demo, cần thay bằng ArcFace thật.
-- Khi đưa lên production, tách riêng service nhận diện, dùng model inference server và lưu vector bền vững.
+## Notes
+- Current embedding is a stub (deterministic) for demo purposes, needs to be replaced with real ArcFace model.
+- When deploying to production, separate the recognition service, use a model inference server, and store vectors persistently.
