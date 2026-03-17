@@ -283,3 +283,744 @@ ValueError: Invalid image bytes
 2026-03-14 17:47:24 | INFO | app | GET /dashboard -> 200
 2026-03-14 17:47:24 | INFO | app | GET /static/css/dashboard.css
 2026-03-14 17:47:24 | INFO | app | GET /static/css/dashboard.css -> 200
+2026-03-14 17:54:16 | INFO | app | GET /dashboard
+2026-03-14 17:54:16 | INFO | app | GET /dashboard -> 200
+2026-03-14 17:54:16 | INFO | app | GET /static/css/dashboard.css
+2026-03-14 17:54:16 | INFO | app | GET /static/js/dashboard.js
+2026-03-14 17:54:16 | INFO | app | GET /static/css/dashboard.css -> 304
+2026-03-14 17:54:16 | INFO | app | GET /static/js/dashboard.js -> 304
+2026-03-14 18:57:20 | INFO | app | PUT /ui/users/EMP002
+2026-03-14 18:57:20 | INFO | app | PUT /ui/users/EMP002 -> 200
+2026-03-14 18:57:30 | INFO | app | GET /static/css/dashboard.css
+2026-03-14 18:57:30 | INFO | app | GET /static/css/dashboard.css -> 304
+2026-03-14 18:57:30 | INFO | app | GET /.well-known/appspecific/com.chrome.devtools.json
+2026-03-14 18:57:30 | INFO | app | GET /.well-known/appspecific/com.chrome.devtools.json -> 404
+2026-03-14 18:58:01 | INFO | app | POST /v1/enroll
+2026-03-14 18:58:02 | INFO | app | POST /v1/enroll -> 409
+2026-03-14 18:58:44 | INFO | app | PUT /ui/users/EMP003
+2026-03-14 18:58:44 | INFO | app | PUT /ui/users/EMP003 -> 200
+2026-03-14 19:11:02 | INFO | app | GET /dashboard
+2026-03-14 19:11:02 | INFO | app | GET /dashboard -> 200
+2026-03-14 19:11:02 | INFO | app | GET /static/css/dashboard.css
+2026-03-14 19:11:02 | INFO | app | GET /uploads/69741751_20260314150227.jpeg
+2026-03-14 19:11:02 | INFO | app | GET /static/css/dashboard.css -> 304
+2026-03-14 19:11:02 | INFO | app | GET /uploads/69741751_20260314150227.jpeg -> 304
+2026-03-14 19:11:02 | INFO | app | GET /static/js/translations.js
+2026-03-14 19:11:02 | INFO | app | GET /static/js/dashboard.js
+2026-03-14 19:11:02 | INFO | app | GET /static/js/dashboard.js -> 200
+2026-03-14 19:11:02 | INFO | app | GET /static/js/translations.js -> 200
+2026-03-14 19:19:32 | INFO | app | GET /dashboard
+2026-03-14 19:19:32 | INFO | app | GET /dashboard -> 200
+2026-03-14 19:19:32 | INFO | app | GET /static/css/dashboard.css
+2026-03-14 19:19:32 | INFO | app | GET /static/css/dashboard.css -> 304
+2026-03-14 19:19:32 | INFO | app | GET /static/js/translations.js
+2026-03-14 19:19:32 | INFO | app | GET /static/js/dashboard.js
+2026-03-14 19:19:32 | INFO | app | GET /static/js/translations.js -> 304
+2026-03-14 19:19:32 | INFO | app | GET /static/js/dashboard.js -> 304
+2026-03-14 19:19:53 | INFO | app | GET /dashboard
+2026-03-14 19:19:53 | INFO | app | GET /dashboard -> 200
+2026-03-14 19:31:02 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:02 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:02 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:02 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:02 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:03 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance -> 200
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance
+2026-03-14 19:31:05 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 11:42:58 | INFO | app | GET /
+2026-03-16 11:42:58 | INFO | app | GET / -> 307
+2026-03-16 11:42:58 | INFO | app | GET /dashboard
+2026-03-16 11:42:59 | INFO | app | GET /
+2026-03-16 11:42:59 | INFO | app | GET / -> 307
+2026-03-16 11:42:59 | INFO | app | GET /dashboard
+2026-03-16 11:42:59 | INFO | app | GET /favicon.ico
+2026-03-16 11:42:59 | INFO | app | GET /favicon.ico -> 404
+2026-03-16 11:48:50 | INFO | app | GET /
+2026-03-16 11:48:50 | INFO | app | GET / -> 307
+2026-03-16 11:48:50 | INFO | app | GET /dashboard
+2026-03-16 11:48:51 | INFO | app | GET /
+2026-03-16 11:48:51 | INFO | app | GET / -> 307
+2026-03-16 11:48:51 | INFO | app | GET /dashboard
+2026-03-16 11:49:43 | INFO | app | GET /dashboard
+2026-03-16 11:49:43 | INFO | app | GET /dashboard -> 200
+2026-03-16 11:49:43 | INFO | app | GET /static/css/dashboard.css
+2026-03-16 11:49:43 | INFO | app | GET /uploads/69741751_20260314150227.jpeg
+2026-03-16 11:49:43 | INFO | app | GET /static/js/translations.js
+2026-03-16 11:49:43 | INFO | app | GET /static/js/dashboard.js
+2026-03-16 11:49:43 | INFO | app | GET /static/css/dashboard.css -> 200
+2026-03-16 11:49:43 | INFO | app | GET /uploads/69741751_20260314150227.jpeg -> 304
+2026-03-16 11:49:43 | INFO | app | GET /static/js/translations.js -> 200
+2026-03-16 11:49:43 | INFO | app | GET /static/js/dashboard.js -> 304
+2026-03-16 12:45:12 | INFO | app | GET /
+2026-03-16 12:45:12 | INFO | app | GET / -> 307
+2026-03-16 12:45:12 | INFO | app | GET /dashboard
+2026-03-16 12:45:12 | INFO | app | GET /dashboard -> 200
+2026-03-16 12:45:12 | INFO | app | GET /static/css/dashboard.css
+2026-03-16 12:45:13 | INFO | app | GET /static/css/dashboard.css -> 200
+2026-03-16 12:45:13 | INFO | app | GET /static/js/translations.js
+2026-03-16 12:45:13 | INFO | app | GET /static/js/translations.js -> 200
+2026-03-16 12:45:20 | INFO | app | GET /users/69741751
+2026-03-16 12:45:20 | INFO | app | GET /users/69741751 -> 200
+2026-03-16 12:45:20 | INFO | app | GET /static/js/user_detail.js
+2026-03-16 12:45:20 | INFO | app | GET /static/js/user_detail.js -> 200
+2026-03-16 12:45:26 | INFO | app | GET /users/69741751
+2026-03-16 12:45:26 | INFO | app | GET /users/69741751 -> 200
+2026-03-16 12:45:35 | INFO | app | GET /dashboard
+2026-03-16 12:45:35 | INFO | app | GET /dashboard -> 200
+2026-03-16 12:45:35 | INFO | app | GET /static/css/dashboard.css
+2026-03-16 12:45:35 | INFO | app | GET /static/js/translations.js
+2026-03-16 12:45:35 | INFO | app | GET /static/css/dashboard.css -> 304
+2026-03-16 12:45:35 | INFO | app | GET /static/js/translations.js -> 304
+2026-03-16 12:57:29 | INFO | app | GET /users/69741751
+2026-03-16 12:57:29 | INFO | app | GET /users/69741751 -> 200
+2026-03-16 12:57:29 | INFO | app | GET /static/css/dashboard.css
+2026-03-16 12:57:29 | INFO | app | GET /static/js/translations.js
+2026-03-16 12:57:29 | INFO | app | GET /static/js/user_detail.js
+2026-03-16 12:57:29 | INFO | app | GET /static/css/dashboard.css -> 304
+2026-03-16 12:57:29 | INFO | app | GET /static/js/translations.js -> 304
+2026-03-16 12:57:29 | INFO | app | GET /static/js/user_detail.js -> 304
+2026-03-16 12:57:32 | INFO | app | GET /dashboard
+2026-03-16 12:57:32 | INFO | app | GET /dashboard -> 200
+2026-03-16 14:40:07 | INFO | app | GET /
+2026-03-16 14:40:07 | INFO | app | GET / -> 307
+2026-03-16 14:40:07 | INFO | app | GET /dashboard
+2026-03-16 14:40:07 | INFO | app | GET /dashboard -> 200
+2026-03-16 14:40:07 | INFO | app | GET /static/css/dashboard.css
+2026-03-16 14:40:07 | INFO | app | GET /static/css/dashboard.css -> 304
+2026-03-16 14:40:07 | INFO | app | GET /static/js/translations.js
+2026-03-16 14:40:07 | INFO | app | GET /static/js/translations.js -> 304
+2026-03-16 14:40:26 | INFO | app | GET /users/69741751
+2026-03-16 14:40:26 | INFO | app | GET /users/69741751 -> 200
+2026-03-16 14:40:26 | INFO | app | GET /static/js/user_detail.js
+2026-03-16 14:40:26 | INFO | app | GET /static/js/user_detail.js -> 304
+2026-03-16 14:40:35 | INFO | app | GET /dashboard
+2026-03-16 14:40:35 | INFO | app | GET /dashboard -> 200
+2026-03-16 14:54:24 | INFO | app | GET /
+2026-03-16 14:54:24 | INFO | app | GET / -> 307
+2026-03-16 14:54:24 | INFO | app | GET /dashboard
+2026-03-16 14:54:24 | INFO | app | GET /dashboard -> 200
+2026-03-16 14:54:24 | INFO | app | GET /static/css/dashboard.css
+2026-03-16 14:54:24 | INFO | app | GET /static/css/dashboard.css -> 200
+2026-03-16 14:54:24 | INFO | app | GET /static/js/translations.js
+2026-03-16 14:54:24 | INFO | app | GET /static/js/translations.js -> 200
+2026-03-16 14:54:27 | INFO | app | GET /dashboard
+2026-03-16 14:54:27 | INFO | app | GET /dashboard -> 200
+2026-03-16 15:52:41 | INFO | app | GET /
+2026-03-16 15:52:41 | INFO | app | GET / -> 307
+2026-03-16 15:52:41 | INFO | app | GET /dashboard
+2026-03-16 15:52:41 | INFO | app | GET /dashboard -> 200
+2026-03-16 15:52:41 | INFO | app | GET /static/css/dashboard.css
+2026-03-16 15:52:41 | INFO | app | GET /static/css/dashboard.css -> 304
+2026-03-16 15:52:41 | INFO | app | GET /static/js/translations.js
+2026-03-16 15:52:41 | INFO | app | GET /static/js/translations.js -> 304
+2026-03-16 15:52:45 | INFO | app | GET /users/69741751
+2026-03-16 15:52:45 | INFO | app | GET /users/69741751 -> 200
+2026-03-16 15:52:45 | INFO | app | GET /static/js/user_detail.js
+2026-03-16 15:52:45 | INFO | app | GET /static/js/user_detail.js -> 200
+2026-03-16 15:52:56 | INFO | app | GET /users/69741751
+2026-03-16 15:52:56 | INFO | app | GET /users/69741751 -> 200
+2026-03-16 15:53:09 | INFO | app | POST /v1/enroll
+2026-03-16 15:53:09 | ERROR | app | Enroll failed: Invalid image bytes
+Traceback (most recent call last):
+  File "D:\Workspace_python\ai_face_recognition\app\main.py", line 229, in enroll
+    vector, image_np, box = _get_embedding_from_image(image_bytes, include_meta=True)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Workspace_python\ai_face_recognition\app\main.py", line 92, in _get_embedding_from_image
+    image = decode_image(image_bytes)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Workspace_python\ai_face_recognition\app\utils\images.py", line 11, in decode_image
+    raise ValueError("Invalid image bytes")
+ValueError: Invalid image bytes
+2026-03-16 15:53:09 | INFO | app | POST /v1/enroll -> 400
+2026-03-16 15:53:18 | INFO | app | POST /v1/enroll
+2026-03-16 15:53:18 | INFO | app | POST /v1/enroll -> 200
+2026-03-16 15:53:20 | INFO | app | GET /users/69741751
+2026-03-16 15:53:20 | INFO | app | GET /users/69741751 -> 200
+2026-03-16 15:53:20 | INFO | app | GET /uploads/69741751_up_20260316155318.jpeg
+2026-03-16 15:53:20 | INFO | app | GET /uploads/69741751_up_20260316155318.jpeg -> 200
+2026-03-16 15:53:24 | INFO | app | GET /dashboard
+2026-03-16 15:53:24 | INFO | app | GET /dashboard -> 200
+2026-03-16 16:18:05 | INFO | app | GET /
+2026-03-16 16:18:05 | INFO | app | GET / -> 307
+2026-03-16 16:18:05 | INFO | app | GET /dashboard
+2026-03-16 16:18:05 | INFO | app | GET /dashboard -> 200
+2026-03-16 16:18:05 | INFO | app | GET /static/css/dashboard.css
+2026-03-16 16:18:05 | INFO | app | GET /uploads/69741751_20260314150227.jpeg
+2026-03-16 16:18:05 | INFO | app | GET /static/css/dashboard.css -> 200
+2026-03-16 16:18:05 | INFO | app | GET /uploads/69741751_20260314150227.jpeg -> 304
+2026-03-16 16:18:05 | INFO | app | GET /static/js/translations.js
+2026-03-16 16:18:05 | INFO | app | GET /static/js/translations.js -> 200
+2026-03-16 16:18:05 | INFO | app | GET /static/js/dashboard.js
+2026-03-16 16:18:05 | INFO | app | GET /static/js/dashboard.js -> 200
+2026-03-16 16:18:22 | INFO | app | GET /static/css/dashboard.css
+2026-03-16 16:18:22 | INFO | app | GET /static/css/dashboard.css -> 304
+2026-03-16 16:18:22 | INFO | app | GET /.well-known/appspecific/com.chrome.devtools.json
+2026-03-16 16:18:22 | INFO | app | GET /.well-known/appspecific/com.chrome.devtools.json -> 404
+2026-03-16 16:18:47 | INFO | app | GET /.well-known/appspecific/com.chrome.devtools.json
+2026-03-16 16:18:47 | INFO | app | GET /.well-known/appspecific/com.chrome.devtools.json -> 404
+2026-03-16 16:24:23 | INFO | app | GET /dashboard
+2026-03-16 16:24:23 | INFO | app | GET /dashboard -> 200
+2026-03-16 16:24:23 | INFO | app | GET /.well-known/appspecific/com.chrome.devtools.json
+2026-03-16 16:24:23 | INFO | app | GET /static/css/dashboard.css
+2026-03-16 16:24:23 | INFO | app | GET /.well-known/appspecific/com.chrome.devtools.json -> 404
+2026-03-16 16:24:23 | INFO | app | GET /static/js/translations.js
+2026-03-16 16:24:23 | INFO | app | GET /static/js/dashboard.js
+2026-03-16 16:24:23 | INFO | app | GET /static/css/dashboard.css -> 304
+2026-03-16 16:24:23 | INFO | app | GET /static/js/translations.js -> 304
+2026-03-16 16:24:23 | INFO | app | GET /static/js/dashboard.js -> 200
+2026-03-16 16:24:28 | INFO | app | GET /users/69741751
+2026-03-16 16:24:28 | INFO | app | GET /users/69741751 -> 200
+2026-03-16 16:24:28 | INFO | app | GET /.well-known/appspecific/com.chrome.devtools.json
+2026-03-16 16:24:28 | INFO | app | GET /uploads/69741751_up_20260316155318.jpeg
+2026-03-16 16:24:28 | INFO | app | GET /.well-known/appspecific/com.chrome.devtools.json -> 404
+2026-03-16 16:24:28 | INFO | app | GET /static/js/user_detail.js
+2026-03-16 16:24:28 | INFO | app | GET /uploads/69741751_up_20260316155318.jpeg -> 304
+2026-03-16 16:24:28 | INFO | app | GET /static/js/user_detail.js -> 304
+2026-03-16 16:24:31 | INFO | app | GET /dashboard
+2026-03-16 16:24:31 | INFO | app | GET /dashboard -> 200
+2026-03-16 16:24:31 | INFO | app | GET /.well-known/appspecific/com.chrome.devtools.json
+2026-03-16 16:24:31 | INFO | app | GET /.well-known/appspecific/com.chrome.devtools.json -> 404
+2026-03-16 16:24:52 | INFO | app | GET /.well-known/appspecific/com.chrome.devtools.json
+2026-03-16 16:24:52 | INFO | app | GET /.well-known/appspecific/com.chrome.devtools.json -> 404
+2026-03-16 16:38:05 | INFO | app | GET /dashboard
+2026-03-16 16:38:06 | INFO | app | GET /dashboard -> 200
+2026-03-16 16:38:06 | INFO | app | GET /static/css/dashboard.css
+2026-03-16 16:38:06 | INFO | app | GET /static/css/dashboard.css -> 304
+2026-03-16 16:38:06 | INFO | app | GET /static/js/translations.js
+2026-03-16 16:38:06 | INFO | app | GET /static/js/dashboard.js
+2026-03-16 16:38:06 | INFO | app | GET /static/js/translations.js -> 200
+2026-03-16 16:38:06 | INFO | app | GET /static/js/dashboard.js -> 304
+2026-03-16 16:38:22 | INFO | app | GET /users/69741751
+2026-03-16 16:38:22 | INFO | app | GET /users/69741751 -> 200
+2026-03-16 16:38:22 | INFO | app | GET /uploads/69741751_up_20260316155318.jpeg
+2026-03-16 16:38:22 | INFO | app | GET /uploads/69741751_up_20260316155318.jpeg -> 304
+2026-03-16 16:38:22 | INFO | app | GET /static/js/user_detail.js
+2026-03-16 16:38:22 | INFO | app | GET /static/js/user_detail.js -> 304
+2026-03-16 16:38:25 | INFO | app | GET /dashboard
+2026-03-16 16:38:25 | INFO | app | GET /dashboard -> 200
+2026-03-16 18:18:53 | INFO | app | GET /
+2026-03-16 18:18:53 | INFO | app | GET / -> 307
+2026-03-16 18:18:53 | INFO | app | GET /dashboard
+2026-03-16 18:18:53 | INFO | app | GET /dashboard -> 200
+2026-03-16 18:18:53 | INFO | app | GET /static/css/dashboard.css
+2026-03-16 18:18:53 | INFO | app | GET /static/css/dashboard.css -> 304
+2026-03-16 18:18:53 | INFO | app | GET /static/js/translations.js
+2026-03-16 18:18:53 | INFO | app | GET /static/js/dashboard.js
+2026-03-16 18:18:53 | INFO | app | GET /static/js/translations.js -> 304
+2026-03-16 18:18:53 | INFO | app | GET /static/js/dashboard.js -> 304
+2026-03-16 18:19:02 | INFO | app | GET /users/EMP003
+2026-03-16 18:19:02 | INFO | app | GET /users/EMP003 -> 200
+2026-03-16 18:19:02 | INFO | app | GET /static/js/user_detail.js
+2026-03-16 18:19:02 | INFO | app | GET /static/js/user_detail.js -> 304
+2026-03-16 18:19:09 | INFO | app | GET /dashboard
+2026-03-16 18:19:09 | INFO | app | GET /dashboard -> 200
+2026-03-16 19:27:56 | INFO | app | GET /
+2026-03-16 19:27:56 | INFO | app | GET / -> 307
+2026-03-16 19:27:56 | INFO | app | GET /dashboard
+2026-03-16 19:27:56 | INFO | app | GET /dashboard -> 200
+2026-03-16 19:27:56 | INFO | app | GET /static/css/dashboard.css
+2026-03-16 19:27:56 | INFO | app | GET /static/css/dashboard.css -> 304
+2026-03-16 19:27:57 | INFO | app | GET /static/js/translations.js
+2026-03-16 19:27:57 | INFO | app | GET /static/js/translations.js -> 304
+2026-03-16 19:27:57 | INFO | app | GET /static/js/dashboard.js
+2026-03-16 19:27:57 | INFO | app | GET /static/js/dashboard.js -> 304
+2026-03-16 19:28:14 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | Pose front conf=0.82 matched=front score=1.000 threshold=0.350
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:15 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance -> 200
+2026-03-16 19:28:17 | INFO | app | POST /v1/attendance -> 200
+2026-03-17 09:11:01 | INFO | app | GET /
+2026-03-17 09:11:01 | INFO | app | GET / -> 307
+2026-03-17 09:11:01 | INFO | app | GET /dashboard
+2026-03-17 09:11:02 | INFO | app | GET /
+2026-03-17 09:11:02 | INFO | app | GET / -> 307
+2026-03-17 09:11:02 | INFO | app | GET /dashboard
+2026-03-17 09:12:07 | INFO | app | GET /dashboard
+2026-03-17 09:12:08 | INFO | app | GET /dashboard
+2026-03-17 09:12:08 | INFO | app | GET /dashboard
+2026-03-17 09:12:08 | INFO | app | GET /dashboard
+2026-03-17 09:12:08 | INFO | app | GET /dashboard

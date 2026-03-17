@@ -1,9 +1,14 @@
-﻿from typing import Optional
+from typing import Optional
+
+import logging
 
 from fastapi import APIRouter, Form, HTTPException
 from pydantic import BaseModel
 
 from app.core.deps import get_identities
+from app.utils.validation import validate_email, validate_identity_id, validate_text_length
+
+logger = logging.getLogger("app")
 
 router = APIRouter(prefix="/ui/users", tags=["ui-users"])
 
@@ -46,6 +51,27 @@ async def create_user(
 
 @router.put("/{identity_id}")
 async def update_user(identity_id: str, payload: UserPayload):
+    err = validate_identity_id(identity_id)
+    if err:
+        logger.warning(err)
+        raise HTTPException(status_code=400, detail=err)
+    err = validate_text_length("name", payload.name)
+    if err:
+        logger.warning(err)
+        raise HTTPException(status_code=400, detail=err)
+    err = validate_text_length("department", payload.department)
+    if err:
+        logger.warning(err)
+        raise HTTPException(status_code=400, detail=err)
+    err = validate_text_length("email", payload.email, max_len=160)
+    if err:
+        logger.warning(err)
+        raise HTTPException(status_code=400, detail=err)
+    err = validate_email(payload.email)
+    if err:
+        logger.warning(err)
+        raise HTTPException(status_code=400, detail=err)
+
     identities = get_identities()
     existing = identities.get(identity_id)
     if existing is None:
@@ -59,6 +85,7 @@ async def update_user(identity_id: str, payload: UserPayload):
         "email": payload.email if payload.email is not None else existing.get("email", "-"),
         "active": payload.active if payload.active is not None else existing.get("active", True),
         "image_url": existing.get("image_url"),
+        "images": existing.get("images", {}),
     }
     identities.upsert(identity_id, updated)
     return {"status": "ok"}

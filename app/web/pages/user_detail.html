@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi tiet user - Face Attendance</title>
+    {% include "components/_head_libs.html" %}
+    <link rel="stylesheet" href="/assets/css/dashboard.css" />
+  </head>
+  <body>
+    {% include "components/navbar/user_detail_navbar.html" %}
+
+    <main class="page layout-width">
+      <section class="card primary" data-identity="{{ user.identity_id }}">
+        <div class="card-header">
+          <div class="card-header-top">
+            <h2 data-i18n="user_info">Thong tin user</h2>
+            <p class="muted">
+              <span class="mono">{{ user.identity_id }}</span>
+              ? <span>{{ user.name }}</span>
+              ? <span>{{ user.department }}</span>
+              ? <span>{{ user.email }}</span>
+            </p>
+          </div>
+          {% if images_complete %}
+          <span class="badge active" data-i18n="angles_complete">Da 5 goc</span>
+          {% else %}
+          <span class="badge warning" data-i18n="angles_missing">Thieu goc</span>
+          {% endif %}
+        </div>
+
+        {% if not images_complete %}
+        <div class="angle-warning">
+          <strong data-i18n="missing_title">Chua du 5 goc:</strong>
+          <span data-missing="{{ missing_angles | join(',') }}"></span>
+        </div>
+        {% endif %}
+
+        <div class="angle-grid large">
+          {% for card in angle_cards %}
+          <div class="angle-card" data-angle="{{ card.angle }}">
+            <div class="angle-label" data-i18n="angle_{{ card.angle }}"></div>
+            <div class="angle-photo">
+              {% if card.image_url %}
+              <img src="{{ card.image_url }}" alt="{{ card.angle }}" />
+              {% else %}
+              <div class="angle-placeholder">
+                <i class="bi bi-camera"></i>
+                <span data-i18n="no_photo">Chua co anh</span>
+              </div>
+              {% endif %}
+            </div>
+            <div class="angle-meta">
+              {% if card.updated_at %}
+              <span>{{ card.updated_at }}</span>
+              {% else %}
+              <span data-i18n="not_updated">Chua cap nhat</span>
+              {% endif %}
+            </div>
+            <div class="angle-actions">
+              <label class="upload">
+                <input type="file" accept="image/*" data-angle-input="{{ card.angle }}" />
+                <span>
+                  <i class="bi bi-camera"></i>
+                  <span data-i18n="choose_photo">Chon anh</span>
+                </span>
+              </label>
+              <button class="btn btn-sm btn-primary" type="button" data-angle-save="{{ card.angle }}" data-i18n="update_photo">Cap nhat anh</button>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>`n    <script src="/config/app.js"></script>
+    <script>window.APP_TRANSLATIONS = {{ translations | tojson | safe }};</script>
+    <script src="/assets/js/translations.js"></script>
+    <script src="/assets/js/user_detail.js"></script>
+  </body>
+</html>

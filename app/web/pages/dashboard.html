@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Face Attendance</title>
+    {% include "components/_head_libs.html" %}
+    <link rel="stylesheet" href="/assets/css/dashboard.css" />
+  </head>
+  <body>
+    {% include "components/navbar/dashboard_navbar.html" %}
+
+    <main class="page layout-width">
+      <section class="card primary">
+        <div class="card-header">
+          <div class="card-header-top">
+            <h2 data-i18n="list_title">Danh sach user</h2>
+            <p data-i18n="list_subtitle">
+              Quan ly nhan dien va diem danh nhanh, sach, chinh xac.
+            </p>
+          </div>
+          <div class="table-toolbar">
+            <div class="table-actions">
+              <div class="search-box">
+                <i class="bi bi-search"></i>
+                <input
+                  id="searchInput"
+                  placeholder="Tim theo ID, ten, phong ban, email..."
+                  data-i18n-placeholder="search_placeholder"
+                />
+                <button id="clearSearch" type="button" aria-label="Clear search" data-i18n-aria="search_clear">
+                  <i class="bi bi-x-circle"></i>
+                </button>
+              </div>
+              <button class="ghost-btn" type="button">
+                <i class="ti ti-download"></i>
+                <span data-i18n="export_list">Xuat danh sach</span>
+              </button>
+              <button
+                class="ghost-btn"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#createModal"
+              >
+                <i class="ti ti-user-plus"></i>
+                <span data-i18n="add_user">Them user</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <p class="hint" data-i18n="hint_client">Tim kiem chay tren trinh duyet de giam tai server.</p>
+
+        <div class="table">
+          <div class="row header">
+            <div data-i18n="th_image">Anh</div>
+            <div data-i18n="th_id">ID</div>
+            <div data-i18n="th_name">Ho ten</div>
+            <div data-i18n="th_department">Phong ban</div>
+            <div data-i18n="th_email">Email</div>
+            <div data-i18n="th_status">Trang thai</div>
+            <div data-i18n="th_actions">Hanh dong</div>
+          </div>
+          {% for user in users %}
+          <div class="row" data-id="{{ user.identity_id }}" data-image="{{ user.image_url or '' }}" data-images='{{ user.images | tojson | safe }}'>
+            <div>
+              {% if user.image_url %}
+              <img class="avatar" src="{{ user.image_url }}" alt="{{ user.name }}" />
+              {% else %}
+              <div class="avatar placeholder">
+                <i class="bi bi-person"></i>
+              </div>
+              {% endif %}
+            </div>
+            <div class="mono">{{ user.identity_id }}</div>
+            <div class="name">{{ user.name }}</div>
+            <div class="department">{{ user.department }}</div>
+            <div class="email">{{ user.email }}</div>
+            <div>
+              <span
+                class="badge {{ 'active' if user.active else 'inactive' }}"
+                data-active="{{ 'true' if user.active else 'false' }}"
+              >
+                {{ 'Active' if user.active else 'Inactive' }}
+              </span>
+              {% if not user.images_complete %}
+              <span class="badge warning" data-i18n="angles_missing">Thieu goc</span>
+              {% else %}
+              <span class="badge success" data-i18n="angles_complete">Da 5 goc</span>
+              {% endif %}
+            </div>
+            <div class="actions">
+              <a class="btn btn-sm btn-outline-secondary" href="/users/{{ user.identity_id }}" data-i18n="action_view">Xem</a>
+              <button class="btn btn-sm btn-outline-primary" data-action="edit">
+                <i class="bi bi-pencil"></i>
+                <span data-i18n="action_edit">Sua</span>
+              </button>
+              <button class="btn btn-sm btn-outline-danger" data-action="delete">
+                <i class="bi bi-trash"></i>
+                <span data-i18n="action_delete">Xoa</span>
+              </button>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+    </main>
+
+    <footer class="app-footer modern">
+      <div class="footer-top layout-width">
+        <div class="footer-brand">
+          <span class="footer-mark">FA</span>
+          <span data-i18n="app_name">Face Attendance</span>
+        </div>
+        <div class="footer-links">
+          <a href="#" data-i18n="footer_terms">Dieu khoan su dung</a>
+          <a href="#" data-i18n="footer_privacy">Chinh sach bao mat</a>
+          <a href="#" data-i18n="footer_cookies">Cookies</a>
+          <a href="#" data-i18n="footer_rss">RSS</a>
+        </div>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook" data-i18n-aria="social_facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="X" data-i18n-aria="social_x"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" aria-label="YouTube" data-i18n-aria="social_youtube"><i class="bi bi-youtube"></i></a>
+          <a href="#" aria-label="Instagram" data-i18n-aria="social_instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="RSS" data-i18n-aria="social_rss"><i class="bi bi-rss"></i></a>
+        </div>
+      </div>
+      <div class="footer-main layout-width">
+        <div class="footer-col">
+          <h4 data-i18n="footer_headline">Bao tieng Viet nhieu nguoi xem nhat</h4>
+          <p data-i18n="footer_owner">Thuoc Bo Khoa hoc va Cong nghe</p>
+          <p data-i18n="footer_license">So giay phep: 548/GP-BTTTT</p>
+        </div>
+        <div class="footer-col">
+          <p data-i18n="footer_editor">Tong bien tap: Pham Van Hieu</p>
+          <p data-i18n="footer_address">Tang 10, Toa A, FPT Tower, 10 Pham Van Bach, Ha Noi</p>
+          <p data-i18n="footer_contact">Dien thoai: 024 7300 8899 · Email: webmaster@faceattendance.vn</p>
+        </div>
+        <div class="footer-col footer-right">
+          <p data-i18n="footer_copyright">© 2026 Face Attendance. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    {% include "components/modal/edit_modal.html" %}
+    {% include "components/modal/create_modal.html" %}
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>`n    <script src="/config/app.js"></script>
+    <script>window.APP_TRANSLATIONS = {{ translations | tojson | safe }};</script>
+    <script src="/assets/js/translations.js"></script>
+    <script src="/assets/js/dashboard.js"></script>
+  </body>
+</html>

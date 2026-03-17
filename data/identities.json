@@ -9,14 +9,15 @@
     "name": "Tran Minh Chau",
     "department": "HR",
     "email": "chau.tran@example.com",
-    "active": false,
+    "active": true,
     "image_url": null
   },
   "EMP003": {
     "name": "Le Hoang Long",
     "department": "Finance",
     "email": "long.le@example.com",
-    "active": true
+    "active": false,
+    "image_url": null
   },
   "EMP004": {
     "name": "Pham Thu Ha",
@@ -29,6 +30,363 @@
     "department": "Finance",
     "email": "nt.duongq@samsung.com",
     "active": true,
-    "image_url": "/uploads/69741751_20260314150227.jpeg"
+    "image_url": "/uploads/69741751_20260314150227.jpeg",
+    "images": {
+      "up": {
+        "image_url": "/uploads/69741751_up_20260316155318.jpeg",
+        "vector_id": 3,
+        "updated_at": "2026-03-16T15:53:18.674820"
+      }
+    }
+  },
+  "EMP005": {
+    "name": "Vu Gia Duc",
+    "department": "Marketing",
+    "email": "duc.vu5@example.com",
+    "active": false,
+    "image_url": null
+  },
+  "EMP006": {
+    "name": "Dang Quoc Nga",
+    "department": "Customer Support",
+    "email": "nga.dang6@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP007": {
+    "name": "Bui Thi Mai",
+    "department": "QA",
+    "email": "mai.bui7@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP008": {
+    "name": "Do Minh Linh",
+    "department": "R&D",
+    "email": "linh.do8@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP009": {
+    "name": "Ngo Gia Viet",
+    "department": "IT",
+    "email": "viet.ngo9@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP010": {
+    "name": "Nguyen Quoc Minh",
+    "department": "Engineering",
+    "email": "minh.nguyen10@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP011": {
+    "name": "Tran Thi Huy",
+    "department": "HR",
+    "email": "huy.tran11@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP012": {
+    "name": "Le Minh Lan",
+    "department": "Finance",
+    "email": "lan.le12@example.com",
+    "active": false,
+    "image_url": null
+  },
+  "EMP013": {
+    "name": "Pham Gia Khanh",
+    "department": "Operations",
+    "email": "khanh.pham13@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP014": {
+    "name": "Hoang Quoc Hoa",
+    "department": "Sales",
+    "email": "hoa.hoang14@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP015": {
+    "name": "Vu Thi Nam",
+    "department": "Marketing",
+    "email": "nam.vu15@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP016": {
+    "name": "Dang Minh Yen",
+    "department": "Customer Support",
+    "email": "yen.dang16@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP017": {
+    "name": "Bui Gia Anh",
+    "department": "QA",
+    "email": "anh.bui17@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP018": {
+    "name": "Do Quoc Trang",
+    "department": "R&D",
+    "email": "trang.do18@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP019": {
+    "name": "Ngo Thi Quang",
+    "department": "IT",
+    "email": "quang.ngo19@example.com",
+    "active": false,
+    "image_url": null
+  },
+  "EMP020": {
+    "name": "Nguyen Minh Tuan",
+    "department": "Engineering",
+    "email": "tuan.nguyen20@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP021": {
+    "name": "Tran Gia Phuong",
+    "department": "HR",
+    "email": "phuong.tran21@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP022": {
+    "name": "Le Quoc Son",
+    "department": "Finance",
+    "email": "son.le22@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP023": {
+    "name": "Pham Thi Bao",
+    "department": "Operations",
+    "email": "bao.pham23@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP024": {
+    "name": "Hoang Minh Thu",
+    "department": "Sales",
+    "email": "thu.hoang24@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP025": {
+    "name": "Vu Gia Duc",
+    "department": "Marketing",
+    "email": "duc.vu25@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP026": {
+    "name": "Dang Quoc Nga",
+    "department": "Customer Support",
+    "email": "nga.dang26@example.com",
+    "active": false,
+    "image_url": null
+  },
+  "EMP027": {
+    "name": "Bui Thi Mai",
+    "department": "QA",
+    "email": "mai.bui27@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP028": {
+    "name": "Do Minh Linh",
+    "department": "R&D",
+    "email": "linh.do28@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP029": {
+    "name": "Ngo Gia Viet",
+    "department": "IT",
+    "email": "viet.ngo29@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP030": {
+    "name": "Nguyen Quoc Minh",
+    "department": "Engineering",
+    "email": "minh.nguyen30@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP031": {
+    "name": "Tran Thi Huy",
+    "department": "HR",
+    "email": "huy.tran31@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP032": {
+    "name": "Le Minh Lan",
+    "department": "Finance",
+    "email": "lan.le32@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP033": {
+    "name": "Pham Gia Khanh",
+    "department": "Operations",
+    "email": "khanh.pham33@example.com",
+    "active": false,
+    "image_url": null
+  },
+  "EMP034": {
+    "name": "Hoang Quoc Hoa",
+    "department": "Sales",
+    "email": "hoa.hoang34@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP035": {
+    "name": "Vu Thi Nam",
+    "department": "Marketing",
+    "email": "nam.vu35@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP036": {
+    "name": "Dang Minh Yen",
+    "department": "Customer Support",
+    "email": "yen.dang36@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP037": {
+    "name": "Bui Gia Anh",
+    "department": "QA",
+    "email": "anh.bui37@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP038": {
+    "name": "Do Quoc Trang",
+    "department": "R&D",
+    "email": "trang.do38@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP039": {
+    "name": "Ngo Thi Quang",
+    "department": "IT",
+    "email": "quang.ngo39@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP040": {
+    "name": "Nguyen Minh Tuan",
+    "department": "Engineering",
+    "email": "tuan.nguyen40@example.com",
+    "active": false,
+    "image_url": null
+  },
+  "EMP041": {
+    "name": "Tran Gia Phuong",
+    "department": "HR",
+    "email": "phuong.tran41@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP042": {
+    "name": "Le Quoc Son",
+    "department": "Finance",
+    "email": "son.le42@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP043": {
+    "name": "Pham Thi Bao",
+    "department": "Operations",
+    "email": "bao.pham43@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP044": {
+    "name": "Hoang Minh Thu",
+    "department": "Sales",
+    "email": "thu.hoang44@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP045": {
+    "name": "Vu Gia Duc",
+    "department": "Marketing",
+    "email": "duc.vu45@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP046": {
+    "name": "Dang Quoc Nga",
+    "department": "Customer Support",
+    "email": "nga.dang46@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP047": {
+    "name": "Bui Thi Mai",
+    "department": "QA",
+    "email": "mai.bui47@example.com",
+    "active": false,
+    "image_url": null
+  },
+  "EMP048": {
+    "name": "Do Minh Linh",
+    "department": "R&D",
+    "email": "linh.do48@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP049": {
+    "name": "Ngo Gia Viet",
+    "department": "IT",
+    "email": "viet.ngo49@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP050": {
+    "name": "Nguyen Quoc Minh",
+    "department": "Engineering",
+    "email": "minh.nguyen50@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP051": {
+    "name": "Tran Thi Huy",
+    "department": "HR",
+    "email": "huy.tran51@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP052": {
+    "name": "Le Minh Lan",
+    "department": "Finance",
+    "email": "lan.le52@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP053": {
+    "name": "Pham Gia Khanh",
+    "department": "Operations",
+    "email": "khanh.pham53@example.com",
+    "active": true,
+    "image_url": null
+  },
+  "EMP054": {
+    "name": "Hoang Quoc Hoa",
+    "department": "Sales",
+    "email": "hoa.hoang54@example.com",
+    "active": false,
+    "image_url": null
   }
 }

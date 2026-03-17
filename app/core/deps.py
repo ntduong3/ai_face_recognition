@@ -1,14 +1,14 @@
-﻿from typing import Optional
+from typing import Optional
 
 import redis
 
 from app.core.config import settings
-from app.services.attendance import AttendanceService
-from app.services.cache import Cache
-from app.services.embedding import ArcFaceEmbedder
-from app.services.face_detection import FaceDetector
-from app.services.faiss_index import FaissIndex
-from app.storage.identities import IdentityStore
+from app.repositories.identities import IdentityStore
+from app.services.attendance_svc import AttendanceService
+from app.services.cache_svc import Cache
+from app.services.embedding_svc import ArcFaceEmbedder
+from app.services.face_detection_svc import FaceDetector
+from app.services.faiss_index_svc import FaissIndex
 
 
 _face_detector: Optional[FaceDetector] = None

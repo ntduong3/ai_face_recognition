@@ -1,0 +1,110 @@
+<div class="modal fade" id="editModal" tabindex="-1">
+  <div class="modal-dialog">
+    <form class="modal-content" id="editForm">
+      <div class="modal-header">
+        <h5 class="modal-title" data-i18n="edit_title">Chinh sua user</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label class="form-label" data-i18n="field_id">Ma nhan vien</label>
+          <input class="form-control" name="identity_id" readonly />
+        </div>
+        <div class="mb-3">
+          <label class="form-label" data-i18n="field_name">Ho ten</label>
+          <input class="form-control" name="name" />
+        </div>
+        <div class="mb-3">
+          <label class="form-label" data-i18n="field_department">Phong ban</label>
+          <input class="form-control" name="department" />
+        </div>
+        <div class="mb-3">
+          <label class="form-label" data-i18n="field_email">Email</label>
+          <input class="form-control" type="email" name="email" />
+        </div>
+        <div class="mb-3">
+          <label class="form-label" data-i18n="field_status">Trang thai</label>
+          <select class="form-select" name="active">
+            <option value="true" data-i18n="status_active">Hoat dong</option>
+            <option value="false" data-i18n="status_inactive">Ngung hoat dong</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" data-i18n="field_avatar">Anh dai dien</label>
+          <div class="angle-warning">
+            <strong data-i18n="edit_images_note">Chinh sua anh tai trang xem chi tiet.</strong>
+            <a id="editImagesLink" class="link" href="#" data-i18n="open_detail">Mo trang anh</a>
+          </div>
+        </div>
+
+        <div class="angle-card" data-angle="left">
+          <div class="angle-label" data-i18n="angle_left">2. Quay trai</div>
+          <label class="upload">
+            <input id="editImageLeft" type="file" accept="image/*" data-angle="left" />
+            <span>
+              <i class="bi bi-camera"></i>
+              <span data-i18n="choose_new_photo">Chon anh moi</span>
+            </span>
+          </label>
+          <div class="preview" id="editPreviewLeft">
+            <img id="editPreviewImageLeft" alt="Preview" />
+            <span data-i18n="preview">Preview</span>
+          </div>
+        </div>
+
+        <div class="angle-card" data-angle="right">
+          <div class="angle-label" data-i18n="angle_right">3. Quay phai</div>
+          <label class="upload">
+            <input id="editImageRight" type="file" accept="image/*" data-angle="right" />
+            <span>
+              <i class="bi bi-camera"></i>
+              <span data-i18n="choose_new_photo">Chon anh moi</span>
+            </span>
+          </label>
+          <div class="preview" id="editPreviewRight">
+            <img id="editPreviewImageRight" alt="Preview" />
+            <span data-i18n="preview">Preview</span>
+          </div>
+        </div>
+
+        <div class="angle-card" data-angle="up">
+          <div class="angle-label" data-i18n="angle_up">4. Nhin len</div>
+          <label class="upload">
+            <input id="editImageUp" type="file" accept="image/*" data-angle="up" />
+            <span>
+              <i class="bi bi-camera"></i>
+              <span data-i18n="choose_new_photo">Chon anh moi</span>
+            </span>
+          </label>
+          <div class="preview" id="editPreviewUp">
+            <img id="editPreviewImageUp" alt="Preview" />
+            <span data-i18n="preview">Preview</span>
+          </div>
+        </div>
+
+        <div class="angle-card" data-angle="down">
+          <div class="angle-label" data-i18n="angle_down">5. Nhin xuong</div>
+          <label class="upload">
+            <input id="editImageDown" type="file" accept="image/*" data-angle="down" />
+            <span>
+              <i class="bi bi-camera"></i>
+              <span data-i18n="choose_new_photo">Chon anh moi</span>
+            </span>
+          </label>
+          <div class="preview" id="editPreviewDown">
+            <img id="editPreviewImageDown" alt="Preview" />
+            <span data-i18n="preview">Preview</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light" data-bs-dismiss="modal" data-i18n="cancel">
+          Huy
+        </button>
+        <button type="submit" class="btn btn-primary" data-i18n="save">Luu</button>
+      </div>
+    </form>
+  </div>
+</div>

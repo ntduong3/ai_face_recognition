@@ -1,0 +1,153 @@
+<div class="modal fade" id="createModal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <form class="modal-content" id="createForm" enctype="multipart/form-data">
+      <div class="modal-header">
+        <h5 class="modal-title" data-i18n="create_title">Them user + enroll</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-grid">
+          <div>
+            <label class="form-label" data-i18n="field_id">Ma nhan vien</label>
+            <input
+              class="form-control"
+              name="identity_id"
+              placeholder="VD: NV001"
+              data-i18n-placeholder="placeholder_id"
+              required
+            />
+          </div>
+          <div>
+            <label class="form-label" data-i18n="field_name">Ho ten</label>
+            <input
+              class="form-control"
+              name="name"
+              placeholder="Nguyen Van A"
+              data-i18n-placeholder="placeholder_name"
+            />
+          </div>
+          <div>
+            <label class="form-label" data-i18n="field_department">Phong ban</label>
+            <input
+              class="form-control"
+              name="department"
+              placeholder="Ky thuat"
+              data-i18n-placeholder="placeholder_department"
+            />
+          </div>
+          <div>
+            <label class="form-label" data-i18n="field_email">Email</label>
+            <input
+              class="form-control"
+              name="email"
+              type="email"
+              placeholder="email@congty.vn"
+              data-i18n-placeholder="placeholder_email"
+            />
+          </div>
+          <div>
+            <label class="form-label" data-i18n="field_status">Trang thai</label>
+            <select class="form-select" name="active">
+              <option value="true" selected data-i18n="status_active">Hoat dong</option>
+              <option value="false" data-i18n="status_inactive">Ngung hoat dong</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="upload-section">
+          <div class="upload-hint" data-i18n="create_upload_hint">
+            Anh ro mat, nhin thang, khong che mat, nen sang.
+          </div>
+          <div class="angle-grid">
+            <div class="angle-card" data-angle="front">
+              <div class="angle-label" data-i18n="angle_front">1. Nhin thang</div>
+              <label class="upload">
+                <input id="createImageFront" type="file" accept="image/*" data-angle="front" />
+                <span>
+                  <i class="bi bi-camera"></i>
+                  <span data-i18n="choose_photo">Chon anh</span>
+                </span>
+              </label>
+              <div class="preview" id="createPreviewFront">
+                <img id="createPreviewImageFront" alt="Preview" />
+                <span data-i18n="preview">Preview</span>
+              </div>
+            </div>
+            <div class="angle-card" data-angle="left">
+              <div class="angle-label" data-i18n="angle_left">2. Quay trai</div>
+              <label class="upload">
+                <input id="createImageLeft" type="file" accept="image/*" data-angle="left" />
+                <span>
+                  <i class="bi bi-camera"></i>
+                  <span data-i18n="choose_photo">Chon anh</span>
+                </span>
+              </label>
+              <div class="preview" id="createPreviewLeft">
+                <img id="createPreviewImageLeft" alt="Preview" />
+                <span data-i18n="preview">Preview</span>
+              </div>
+            </div>
+            <div class="angle-card" data-angle="right">
+              <div class="angle-label" data-i18n="angle_right">3. Quay phai</div>
+              <label class="upload">
+                <input id="createImageRight" type="file" accept="image/*" data-angle="right" />
+                <span>
+                  <i class="bi bi-camera"></i>
+                  <span data-i18n="choose_photo">Chon anh</span>
+                </span>
+              </label>
+              <div class="preview" id="createPreviewRight">
+                <img id="createPreviewImageRight" alt="Preview" />
+                <span data-i18n="preview">Preview</span>
+              </div>
+            </div>
+            <div class="angle-card" data-angle="up">
+              <div class="angle-label" data-i18n="angle_up">4. Nhin len</div>
+              <label class="upload">
+                <input id="createImageUp" type="file" accept="image/*" data-angle="up" />
+                <span>
+                  <i class="bi bi-camera"></i>
+                  <span data-i18n="choose_photo">Chon anh</span>
+                </span>
+              </label>
+              <div class="preview" id="createPreviewUp">
+                <img id="createPreviewImageUp" alt="Preview" />
+                <span data-i18n="preview">Preview</span>
+              </div>
+            </div>
+            <div class="angle-card" data-angle="down">
+              <div class="angle-label" data-i18n="angle_down">5. Nhin xuong</div>
+              <label class="upload">
+                <input id="createImageDown" type="file" accept="image/*" data-angle="down" />
+                <span>
+                  <i class="bi bi-camera"></i>
+                  <span data-i18n="choose_photo">Chon anh</span>
+                </span>
+              </label>
+              <div class="preview" id="createPreviewDown">
+                <img id="createPreviewImageDown" alt="Preview" />
+                <span data-i18n="preview">Preview</span>
+              </div>
+            </div>
+          </div>
+          <div class="angle-guide">
+            <div class="angle-title" data-i18n="angle_title">Cac goc can chup:</div>
+            <ul class="angle-list">
+              <li data-i18n="angle_front">1. Nhin thang</li>
+              <li data-i18n="angle_left">2. Quay trai</li>
+              <li data-i18n="angle_right">3. Quay phai</li>
+              <li data-i18n="angle_up">4. Nhin len</li>
+              <li data-i18n="angle_down">5. Nhin xuong</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light" data-bs-dismiss="modal" data-i18n="cancel">
+          Huy
+        </button>
+        <button type="submit" class="btn btn-primary" data-i18n="create">Tao + enroll</button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -17,6 +17,15 @@ class Settings:
     vector_dim = int(_get_env("VECTOR_DIM", "512"))
     similarity_threshold = float(_get_env("SIMILARITY_THRESHOLD", "0.35"))
 
+    front_search_k = int(_get_env("FRONT_SEARCH_K", "10"))
+    side_search_k = int(_get_env("SIDE_SEARCH_K", "20"))
+
+    # Pose penalties (for 5-angle verification)
+    pose_penalty_side = float(_get_env("POSE_PENALTY_SIDE", "0.05"))
+    pose_penalty_vertical = float(_get_env("POSE_PENALTY_VERTICAL", "0.07"))
+    pose_penalty_low_confidence = float(_get_env("POSE_PENALTY_LOW_CONF", "0.05"))
+    pose_confidence_threshold = float(_get_env("POSE_CONF_THRESHOLD", "0.5"))
+
     # Storage paths
     data_dir = _get_env("DATA_DIR", "data")
     identities_path = _get_env("IDENTITIES_PATH", os.path.join(data_dir, "identities.json"))
